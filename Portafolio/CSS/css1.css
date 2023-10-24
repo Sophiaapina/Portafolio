@@ -1,0 +1,37 @@
+/* Estilos para .container */
+.container {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    display: inline-block;
+    transform: skew(45deg); /* Inclina los contenedores en -45 grados */
+    transform-origin: bottom right; /* Establece el punto de origen en la esquina inferior derecha */
+}
+
+/* Estilos para .top-container */
+.top-container {
+    background-color: blue; /* Cambia el color de fondo según sea necesario */
+    border: 10px solid #000; /* 10px solid black border */
+    padding: 20px; /* 20px padding */
+    margin: 10px; /* 10px margin */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    
+}
+
+/* Estilos para .middle-container */
+.middle-container {
+    background-color: red; /* Cambia el color de fondo según sea necesario */
+    border: 20px solid #000; /* 20px solid black border */
+    margin: 10px; /* 10px margin */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+   
+}
+
+/* Estilos para .bottom-container */
+.bottom-container {
+    background-color: yellow; /* Cambia el color de fondo según sea necesario */
+    border: 10px solid #000; /* 10px solid black border */
+    margin: 10px; /* 10px margin */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    
+}

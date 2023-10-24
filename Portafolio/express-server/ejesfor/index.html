@@ -1,0 +1,25 @@
+<body>
+
+    <form action="/" method="post">
+
+        <input type="text" name="name" id="name">
+
+        <input type="submit" value="go next">
+
+    </form>
+
+    <% if(names.length != 0) { %>
+
+      <h1>Success!!</h1>
+
+        <% for(var i=0; i<names.length; i++) {%>
+
+              <h3>Welcome <%= names[i]  %> </h3>
+
+        <% } %>
+
+    <% } %>
+
+</body>
+
+</html>

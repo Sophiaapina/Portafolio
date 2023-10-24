@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Express App - Home</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome, <%= name %>!</h1>
+    </div>
+    <h2>Blog Posts:</h2>
+    <ul>
+        <% posts.forEach(post => { %>
+            <li>
+                <strong><%= post.title %></strong><br>
+                <%- post.content.slice(0, 100) %><%= post.content.length > 100 ? '...' : '' %>
+                <a href="/post/<%= post.id %>">Read More</a>
+            </li>
+        <% }) %>
+    </ul>
+    <form action="/add-post" method="post">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required><br>
+        <label for="content">Content:</label>
+        <textarea id="content" name="content" rows="4" required></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+    <a href="/login">Log Out</a>
+    <div class="footer">
+        <p>&copy; 2023 Express App</p>
+    </div>
+</body>
+</html>
