@@ -1,0 +1,30 @@
+body {
+  background-color: #f0f0f0; /* Light gray background */
+  color: #333; /* Dark gray text color */
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+}
+
+h1 {
+  margin: 30px;
+  font-size: 8rem;
+  font-family: 'Lobster', cursive;
+}
+
+p {
+  font-size: 2rem;
+  font-family: 'Indie Flower', cursive;
+}
+
+img {
+  width: 80%;
+}
